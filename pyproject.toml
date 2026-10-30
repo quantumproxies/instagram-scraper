@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quanticdata-instagram-scraper"
+version = "0.1.0"
+description = "Instagram scraper for Python and the command line: public profile stats (followers, following, posts, bio, verified badge) for up to 50 accounts per run, as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "QuanticData", email = "hello@quanticdata.io" }]
+keywords = ["instagram-scraper", "instagram-api", "instagram-profile", "instagram-followers", "follower-tracker", "instagram-data", "social-media-scraper", "influencer-marketing", "web-scraping", "scraper", "python", "cli"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.3"]
+
+[project.scripts]
+instagram-scraper = "quanticdata_instagram_scraper.__main__:run"
+
+[project.urls]
+Homepage = "https://quanticdata.io/collectors/instagram-scraper-api/?utm_source=github&utm_medium=pypi&utm_campaign=instagram-scraper"
+Documentation = "https://quanticdata.io/docs/"
+Source = "https://github.com/quantumproxies/instagram-scraper"
+Issues = "https://github.com/quantumproxies/instagram-scraper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"quanticdata_instagram_scraper" = ["spec.json", "py.typed"]

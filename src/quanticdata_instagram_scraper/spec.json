@@ -1,0 +1,59 @@
+{
+ "cli": "instagram-scraper",
+ "name": "Instagram Scraper",
+ "version": "0.1.0",
+ "description": "Instagram scraper for Python and the command line: public profile stats (followers, following, posts, bio, verified badge) for up to 50 accounts per run, as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/instagram-scraper",
+  "page": "https://quanticdata.io/collectors/instagram-scraper-api/?utm_source=github&utm_medium=cli&utm_campaign=instagram-scraper",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=instagram-scraper",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=instagram-scraper"
+ },
+ "commands": [
+  {
+   "name": "profiles",
+   "collector": "instagram_profile",
+   "method": "profiles",
+   "help": "public profile stats for one or more Instagram accounts",
+   "description": "Public Instagram profile stats — followers, following, posts, bio.",
+   "positional": "usernames",
+   "positional_is_list": true,
+   "positional_optional": false,
+   "columns": [
+    "username",
+    "full_name",
+    "followers",
+    "following",
+    "posts",
+    "verified"
+   ],
+   "sample": "instagram_profile",
+   "inputs": [
+    {
+     "name": "usernames",
+     "type": "string[]",
+     "required": true,
+     "description": "Handles or profile URLs (one per line).",
+     "arg": "usernames"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to run the request from, as an ISO 3166-1 alpha-2 code (us, gb, de...).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many profiles to deliver at most (1–50). You pay only for delivered profiles.",
+     "min": 1,
+     "max": 50,
+     "default": 10,
+     "arg": "max_results"
+    }
+   ]
+  }
+ ]
+}

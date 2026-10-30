@@ -1,0 +1,55 @@
+{
+ "run_id": "cmvk5nj2n0aa041o53ijscqq6",
+ "slug": "instagram_profile",
+ "version": "1.0.1",
+ "status": "done",
+ "input": {
+  "usernames": [
+   "nasa",
+   "natgeo"
+  ],
+  "max_results": 2
+ },
+ "count": 2,
+ "partial": false,
+ "finished_at": "2026-10-22T23:11:51.912Z",
+ "results": [
+  {
+   "url": "https://www.instagram.com/nasa/",
+   "likes": null,
+   "posts": 4972,
+   "user_id": "528817151",
+   "category": null,
+   "platform": "instagram",
+   "username": "nasa",
+   "verified": true,
+   "biography": "Making the seemingly impossible, possible.",
+   "followers": 104000000,
+   "following": 94,
+   "full_name": "NASA",
+   "is_private": false,
+   "is_business": false,
+   "profile_pic": "https://scontent.cdninstagram.com/v/t51.2885-19/29090066_159271188110124_1152068159029641216_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=EjkrF3JbmIEQ7kNvwHZy1lM&_nc_oc=AdoMFNpcIuPaC10ZHm_Ju3lNfNe3MxUzx9oUN25WsHBz_VOnv2Fgi8nf6PlTLv0uglc&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7aa8c&oh=00_AQPKIzoukEZAy06zJoXcQS7D8WllGTA89fcTfWzlS8A7Jw&oe=6AE059E9",
+   "external_url": null
+  },
+  {
+   "url": "https://www.instagram.com/natgeo/",
+   "likes": null,
+   "posts": 32000,
+   "user_id": "787132",
+   "category": null,
+   "platform": "instagram",
+   "username": "natgeo",
+   "verified": true,
+   "biography": "Step into wonder and find your inner explorer with National Geographic",
+   "followers": 268000000,
+   "following": 196,
+   "full_name": "National Geographic",
+   "is_private": false,
+   "is_business": false,
+   "profile_pic": "https://scontent.cdninstagram.com/v/t51.82787-19/683576066_18653628823019133_9051036240972105113_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=1&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40MDAuQzMifQ%3D%3D&_nc_ohc=qG9hbsury8oQ7kNvwEclG9v&_nc_oc=AdpGBZZMWFYvvrSuvug8wg-lxj_Yupawwnero7o6bf41OYeEPqJg3yX6JZ2HkTVgPYA&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_gid=M-tup9h2zSgVBQ0s1NW68w&_nc_ss=7ba8c&oh=00_AQPdlKaRCfwvG3zh0VwrC-XXCciAcuPtNyp70uL7qMJEdA&oe=6AE04FAB",
+   "external_url": null
+  }
+ ],
+ "_note": "Real run of 2026-10-22; the emoji at the end of each bio is removed. Profile picture URLs are signed and expire."
+}
